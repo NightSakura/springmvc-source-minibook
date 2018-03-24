@@ -247,14 +247,9 @@ SpringMVC中使用自定义的属性编辑器有3种方法：
 
 2.实现WebBindingInitializer接口
 
-    public class MyWebBindingInitializer implements WebBindingInitializer {
-
-      @Override
-      public void initBinder(WebDataBinder binder, WebRequest request) {
-        binder.registerCustomEditor(Dept.class, new CustomDeptEditor());  
-      }
-
-    }
+   public static void main(){
+       int val = 1
+   }
 
 之前分析源码的时候，HandlerAdapter构造WebDataBinderFactory的时候，会传递HandlerAdapter的属性webBindingInitializer。
 
